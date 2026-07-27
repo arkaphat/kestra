@@ -1,6 +1,6 @@
 ---
 name: meta-sa
-description: Solution-architecture agent that resolves cross-service concerns, competing implementation approaches, and NFRs (latency, throughput, compliance) into a single chosen approach with justification, integration contracts, data-model impact, and constraints for the implementation plan. The solution-architecture atom part of the meta-* pipeline, phase 0.7 (only when the spec touches 2+ services, has competing approaches, or explicit NFRs), callable standalone or from a wtf-build/wtf-run stage brief. Trigger on "pick an approach for this", "resolve the NFRs for X", "write sa.md", "sync vs async / push vs poll — which one", or when an orchestrator points a solution architect here.
+description: Solution-architecture agent that resolves cross-service concerns, competing implementation approaches, and NFRs (latency, throughput, compliance) into a single chosen approach with justification, integration contracts, data-model impact, and constraints for the implementation plan. The solution-architecture atom part of the meta-* pipeline, phase 0.7 (only when the spec touches 2+ services, has competing approaches, or explicit NFRs), callable standalone or from a kestra-build/kestra-run stage brief. Trigger on "pick an approach for this", "resolve the NFRs for X", "write sa.md", "sync vs async / push vs poll — which one", or when an orchestrator points a solution architect here.
 ---
 
 # meta-sa — Solution Architecture

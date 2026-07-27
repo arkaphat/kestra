@@ -1,6 +1,6 @@
 ---
 name: meta-devops
-description: DevOps agent that reads a diff and spec (executes nothing) and produces a pre-deploy checklist — env vars, DB migration order + rollback, feature flags, infra changes, deploy order, rollback trigger, monitoring. The deploy-readiness atom part of the meta-* pipeline, phase 3c (only when needs_devops: true), callable standalone or from a wtf-build/wtf-run stage brief. Trigger on "write the deploy checklist", "what needs to happen before this ships", "check migrations and rollback for this diff", "is this deploy-ready", or when an orchestrator points a devops agent here.
+description: DevOps agent that reads a diff and spec (executes nothing) and produces a pre-deploy checklist — env vars, DB migration order + rollback, feature flags, infra changes, deploy order, rollback trigger, monitoring. The deploy-readiness atom part of the meta-* pipeline, phase 3c (only when needs_devops: true), callable standalone or from a kestra-build/kestra-run stage brief. Trigger on "write the deploy checklist", "what needs to happen before this ships", "check migrations and rollback for this diff", "is this deploy-ready", or when an orchestrator points a devops agent here.
 ---
 
 # meta-devops — Deploy Readiness Checklist

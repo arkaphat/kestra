@@ -1,6 +1,6 @@
 ---
 name: meta-designer
-description: Designer agent that turns a spec into a build-ready design.md — an artifact (HTML mockup, Figma link, or Mermaid wireframe), a component-reuse-vs-new audit, real design-token mapping, responsive breakpoints, and all four screen states (empty/loading/success/error) per view, turned into testable acceptance criteria. The UI-design atom part of the meta-* pipeline, phase 0.5 (only when needs_ui: true), callable standalone or from a wtf-build/wtf-run stage brief. Trigger on "design this UI", "write design.md", "what components/tokens should this screen use", "spec out the screen states for X", or when an orchestrator points a Designer agent here.
+description: Designer agent that turns a spec into a build-ready design.md — an artifact (HTML mockup, Figma link, or Mermaid wireframe), a component-reuse-vs-new audit, real design-token mapping, responsive breakpoints, and all four screen states (empty/loading/success/error) per view, turned into testable acceptance criteria. The UI-design atom part of the meta-* pipeline, phase 0.5 (only when needs_ui: true), callable standalone or from a kestra-build/kestra-run stage brief. Trigger on "design this UI", "write design.md", "what components/tokens should this screen use", "spec out the screen states for X", or when an orchestrator points a Designer agent here.
 ---
 
 # meta-designer — UI Design Handoff

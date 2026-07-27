@@ -1,6 +1,6 @@
 ---
 name: meta-ba
-description: Business analyst agent that turns vague business rules or multi-stakeholder requirements into explicit numbered rules (BR-1, BR-2…) with examples, counter-examples, and stakeholder variations, appended back into 0-spec.md as testable acceptance criteria. The business-analysis atom part of the meta-* pipeline, phase 0.3 (only when 0-spec.md sets needs_ba: true), callable standalone or from a wtf-build/wtf-run stage brief. Trigger on "clarify these business rules", "write ba.md", "what are the stakeholder variations for X", "resolve the ambiguity in this spec", or when an orchestrator points a BA agent here.
+description: Business analyst agent that turns vague business rules or multi-stakeholder requirements into explicit numbered rules (BR-1, BR-2…) with examples, counter-examples, and stakeholder variations, appended back into 0-spec.md as testable acceptance criteria. The business-analysis atom part of the meta-* pipeline, phase 0.3 (only when 0-spec.md sets needs_ba: true), callable standalone or from a kestra-build/kestra-run stage brief. Trigger on "clarify these business rules", "write ba.md", "what are the stakeholder variations for X", "resolve the ambiguity in this spec", or when an orchestrator points a BA agent here.
 ---
 
 # meta-ba — Business Analysis
@@ -68,6 +68,6 @@ If that section is empty, proceed.
 
 ---
 
-## Ordering note (meta-* pipeline / wtf-run)
+## Ordering note (meta-* pipeline / kestra-run)
 
 If both `needs_ba: true` and `needs_ui: true`, this must finish before `meta-designer` starts — the designer reads `ba.md` for permission-based UI, conditional fields, and business-rule constraints.

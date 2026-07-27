@@ -1,6 +1,6 @@
 ---
 name: meta-review
-description: Independent code-review agent that reads the real git diff first (not prose claims), confirms every claimed change and acceptance criterion is truly present, then reviews correctness, edge cases, error handling, and UI token/component consistency. Returns CLEAR or CHANGES_REQUESTED. The code-review half of the meta-* pipeline, phase 3 (paired with meta-security), callable standalone or from a wtf-build/wtf-run verify stage brief. Trigger on "review this branch", "code review this diff", "is this diff correct", "does this diff actually deliver the spec", or when an orchestrator points a code reviewer here.
+description: Independent code-review agent that reads the real git diff first (not prose claims), confirms every claimed change and acceptance criterion is truly present, then reviews correctness, edge cases, error handling, and UI token/component consistency. Returns CLEAR or CHANGES_REQUESTED. The code-review half of the meta-* pipeline, phase 3 (paired with meta-security), callable standalone or from a kestra-build/kestra-run verify stage brief. Trigger on "review this branch", "code review this diff", "is this diff correct", "does this diff actually deliver the spec", or when an orchestrator points a code reviewer here.
 ---
 
 # meta-review — Independent Code Review

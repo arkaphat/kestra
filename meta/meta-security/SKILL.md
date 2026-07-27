@@ -1,6 +1,6 @@
 ---
 name: meta-security
-description: Independent security-review agent that reads the real git diff for injection risks, authn/authz gaps, secrets in code or logs, and vulnerable new dependencies, with extra scrutiny on protected paths (.env, auth/, payments/, **/secrets/**). Returns CLEAR or CHANGES_REQUESTED, and wins ties against a CLEAR code review. The security half of the meta-* pipeline, phase 3 (paired with meta-review), callable standalone or from a wtf-build/wtf-run verify stage brief. Trigger on "security review this diff", "is this safe to merge", "check for injection/secrets/auth issues", "security check this branch", or when an orchestrator points a security reviewer here.
+description: Independent security-review agent that reads the real git diff for injection risks, authn/authz gaps, secrets in code or logs, and vulnerable new dependencies, with extra scrutiny on protected paths (.env, auth/, payments/, **/secrets/**). Returns CLEAR or CHANGES_REQUESTED, and wins ties against a CLEAR code review. The security half of the meta-* pipeline, phase 3 (paired with meta-review), callable standalone or from a kestra-build/kestra-run verify stage brief. Trigger on "security review this diff", "is this safe to merge", "check for injection/secrets/auth issues", "security check this branch", or when an orchestrator points a security reviewer here.
 ---
 
 # meta-security — Independent Security Gate

@@ -1,6 +1,6 @@
 ---
 name: meta-pm
-description: PM agent that sharpens a rough feature spec into a build-ready 0-spec.md — every acceptance criterion testable, error states explicit, scope cuts named, and needs_ba/needs_ui/needs_sa/needs_devops flags set. The spec-sharpening atom part of the meta-* pipeline, phase 0, callable standalone or from a wtf-build/wtf-run stage brief. Trigger on "sharpen this spec", "turn this rough ask into acceptance criteria", "write 0-spec.md", "what are the ACs for X", "make this spec unambiguous", or when an orchestrator points a PM agent here.
+description: PM agent that sharpens a rough feature spec into a build-ready 0-spec.md — every acceptance criterion testable, error states explicit, scope cuts named, and needs_ba/needs_ui/needs_sa/needs_devops flags set. The spec-sharpening atom part of the meta-* pipeline, phase 0, callable standalone or from a kestra-build/kestra-run stage brief. Trigger on "sharpen this spec", "turn this rough ask into acceptance criteria", "write 0-spec.md", "what are the ACs for X", "make this spec unambiguous", or when an orchestrator points a PM agent here.
 ---
 
 # meta-pm — Spec Validate & Gap-Fill
@@ -102,7 +102,7 @@ Set `false` only for purely backend work (API endpoints, jobs, migrations, CLI) 
 
 ---
 
-## Called from a pipeline (meta-* / wtf-run)
+## Called from a pipeline (meta-* / kestra-run)
 
-- Write output to `<run-folder>/0-spec.md` (run-folder convention: `wtf/runs/<feature-id>/`; wtf-run: wherever the stage's `write_scope` points).
+- Write output to `<run-folder>/0-spec.md` (run-folder convention: `workflow/runs/<feature-id>/`; kestra-run: wherever the stage's `write_scope` points).
 - Downstream stages read the `needs_*` flags to decide whether `meta-ba`, `meta-designer`, or `meta-sa` run next.

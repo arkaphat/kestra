@@ -1,6 +1,6 @@
 ---
 name: meta-dev
-description: Developer agent that implements an implementation plan into real code — edits files per 1-plan.md, keeps the diff scoped to planned files, and hands off to independent QA rather than self-certifying. The build half of the meta-* pipeline, phase 2 (paired with meta-qa), callable standalone or from a wtf-build/wtf-run implement stage brief. Trigger on "implement this plan", "write the code for this plan", "build this feature per the plan", or when an orchestrator points a developer agent here.
+description: Developer agent that implements an implementation plan into real code — edits files per 1-plan.md, keeps the diff scoped to planned files, and hands off to independent QA rather than self-certifying. The build half of the meta-* pipeline, phase 2 (paired with meta-qa), callable standalone or from a kestra-build/kestra-run implement stage brief. Trigger on "implement this plan", "write the code for this plan", "build this feature per the plan", or when an orchestrator points a developer agent here.
 ---
 
 # meta-dev — Developer (Implement)

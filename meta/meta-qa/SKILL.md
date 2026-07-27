@@ -1,6 +1,6 @@
 ---
 name: meta-qa
-description: Independent QA agent that verifies code against acceptance criteria — runs the real test suite, exercises real runtime behavior, and proves every AC with pasted command+exit-code+output evidence. Never trusts a prior "it passed" claim, including meta-dev's own. The verify half of the meta-* pipeline, phase 2 (paired with meta-dev), callable standalone (verify-only "vibe check" on any branch) or from a wtf-build/wtf-run verify stage brief. Trigger on "verify this branch against acceptance criteria", "run the tests and prove it works", "QA this implementation", "vibe check my code", or when an orchestrator points a QA agent here.
+description: Independent QA agent that verifies code against acceptance criteria — runs the real test suite, exercises real runtime behavior, and proves every AC with pasted command+exit-code+output evidence. Never trusts a prior "it passed" claim, including meta-dev's own. The verify half of the meta-* pipeline, phase 2 (paired with meta-dev), callable standalone (verify-only "vibe check" on any branch) or from a kestra-build/kestra-run verify stage brief. Trigger on "verify this branch against acceptance criteria", "run the tests and prove it works", "QA this implementation", "vibe check my code", or when an orchestrator points a QA agent here.
 ---
 
 # meta-qa — QA (Independent Verify)

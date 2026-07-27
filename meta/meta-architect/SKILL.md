@@ -1,6 +1,6 @@
 ---
 name: meta-architect
-description: Architect agent that surveys the real codebase and produces an ordered implementation plan (1-plan.md) with every file path verified to exist (or deliberately placed per existing conventions), every acceptance criterion mapped to a step, and risks named explicitly. The implementation-planning atom part of the meta-* pipeline, phase 1, callable standalone or from a wtf-build/wtf-run stage brief. Trigger on "plan this implementation", "write 1-plan.md", "which files need to change for X", "survey the codebase and plan this feature", or when an orchestrator points an architect agent here.
+description: Architect agent that surveys the real codebase and produces an ordered implementation plan (1-plan.md) with every file path verified to exist (or deliberately placed per existing conventions), every acceptance criterion mapped to a step, and risks named explicitly. The implementation-planning atom part of the meta-* pipeline, phase 1, callable standalone or from a kestra-build/kestra-run stage brief. Trigger on "plan this implementation", "write 1-plan.md", "which files need to change for X", "survey the codebase and plan this feature", or when an orchestrator points an architect agent here.
 ---
 
 # meta-architect — Implementation Plan
@@ -96,6 +96,6 @@ Stop and write `1-plan.md` once every file path is verified and every AC has a c
 
 ---
 
-## Note for wtf-build
+## Note for kestra-build
 
 If generating a `workflow.yaml` stage that needs this kind of planning before a `generate-tests`/`implement` stage, name `meta-architect` in the stage's `brief` as a suggestion — this skill doesn't touch test paths and its `write_scope` should be limited to the plan artifact itself.
